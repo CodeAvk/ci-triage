@@ -1,5 +1,7 @@
 # CI Triage
 
+[![ci](https://github.com/CodeAvk/ci-triage/actions/workflows/ci.yml/badge.svg)](https://github.com/CodeAvk/ci-triage/actions/workflows/ci.yml)
+
 A planned tool that reads a failed GitHub Actions job, decides whether the failure is **flaky** (a re-run would pass) or **real**, and quotes the log lines that support the decision, checked to exist. It is measured against simple non-AI baselines on public jobs labelled by GitHub re-runs, and the AI step is kept only if it wins.
 
 > **Status: Gate 0 (data).** The label collector works; no classifier yet. This is a portfolio project; demand has not been validated.
