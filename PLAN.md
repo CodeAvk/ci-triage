@@ -1,6 +1,6 @@
 # PLAN.md
 
-Status as of 2026-11-20: research done; Gate 0 in progress. The label collector works (`docs/DATA.md`); language is TypeScript.
+Status as of 2026-11-21: research done; Gate 0 in progress. The label collector (`docs/DATA.md`), CI and the log trimmer (`docs/TRIM.md`) work; language is TypeScript.
 
 ## Phases
 1. **Research**: done (2026-11-19). See `PRODUCT_RESEARCH.md`.
@@ -22,6 +22,7 @@ Status as of 2026-11-20: research done; Gate 0 in progress. The label collector 
 - [ ] Check GitHub's terms for storing public Actions logs.
 - [x] Label collector over date windows and repos, with exclusion counts (2026-11-20): window splitting past the 1,000-run cap, request budget, clean stop; first sample 273 labelled jobs.
 - [ ] Add a fifth repository and a longer window, holding out whole repositories for evaluation.
-- [ ] Log trimmer: cut a job log to the failing window deterministically.
+- [x] CI on every push: typecheck, tests, audit (2026-11-21).
+- [x] Log trimmer: cut a job log to the failing window deterministically (2026-11-21). Cause kept in 11 of 12 reviewed logs; the 12th has none.
 - [ ] Keyword baseline and metrics on the dev set.
 - [ ] Gemini classifier with evidence check, dev set only, then a single held-out run.

@@ -10,7 +10,8 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "collect": "tsx src/collect/run.ts"
+    "collect": "tsx src/collect/run.ts",
+    "trim": "tsx src/logs/cli.ts"
   },
   "devDependencies": {
     "@types/node": "26.6.6",

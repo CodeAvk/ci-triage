@@ -34,3 +34,4 @@ After Gates 0 and 1. A CLI (and a GitHub Action) that takes a failed job, trims 
 |---|---|---|
 | 2026-11-19 | Research | Started. Re-run labels exist but are rare (~1.3% of 8,000 runs in 8 repos); approval waits and summary jobs must be excluded; logs are fetchable. Copilot already explains failed jobs. Free-tier text limits unpublished. See `PRODUCT_RESEARCH.md`. |
 | 2026-11-20 | Gate 0 | Collector built (TypeScript). First partial sample: 273 labelled jobs (95 flaky, 178 real) from 129 runs in 4 repos. Size and class minimums met; repos 4 of 5; label mix differs strongly by repo, so splits must be by repo or run. Log terms and Gemini limits still open. See `docs/DATA.md`. |
+| 2026-11-21 | Gate 0 | Log trimmer reviewed on 12 real logs: cause kept in 11 (the 12th log has no cause, cut off). Found identical compile-error text labelled flaky in 2 jobs and real in 1, so labels from re-runs cap achievable accuracy. See `docs/TRIM.md`. |
